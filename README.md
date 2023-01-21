@@ -2,7 +2,7 @@
 
 <p align="center">
 <a href="">
-		<img width="25%" src="Extra-images/android-chrome-512x512.png" />
+		<img width="25%" src="Extra Files/android-chrome-512x512.png" />
 </a>
 </p>
 
