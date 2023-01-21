@@ -1,0 +1,21 @@
+:root{
+    --primary:#00fbff;
+    --dark:#161616;
+    --pure:#ffff;
+    --ternary: #898989;
+    --light:#f2f2f2;
+    --new: rgb(55, 5, 5);
+}
+
+::-webkit-scrollbar {
+    width: 12px;    
+    overflow: hidden;           /* width of the entire scrollbar */
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary);    /* color of the scroll thumb */
+    border-radius: 20px; 
+    height: 5px;      /* roundness of the scroll thumb */
+  }
+

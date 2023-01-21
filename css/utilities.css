@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.items-center{
+    align-items: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.6rem 2.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px 10px;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+.new-btn {
+    --color: #00A97F;
+    --color2: rgb(10, 25, 30);
+    padding: 0.8em 1.75em;
+    background-color: transparent;
+    border-radius: 6px;
+    border: .3px solid var(--primary);
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: 'Roboto', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    color: var(--primary);
+   }
+   
+   .new-btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: .5s ease-out;
+    background-color: var(--primary);
+   }
+   
+   .new-btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .new-btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+   }
+   
+   .new-btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+   }
+   
+   .new-btn:hover {
+    color: var(--color2);
+   }
+   
+   .new-btn:active {
+    filter: brightness(.7);
+    transform: scale(.98);
+   }
